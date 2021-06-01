@@ -36,10 +36,4 @@ const toggleToc = () => {
 if (header !== null) {
   listen('#menu-btn', "click", toggleMobileMenu);
   listen('#toc-btn', "click", toggleToc);
-
-  document.querySelectorAll('.post-year').forEach((ele)=> {
-    ele.addEventListener('click', () => {
-      window.location.hash = '#' + ele.id;
-    });
-  });
 }
