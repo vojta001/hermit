@@ -26,16 +26,6 @@ const toggleMobileMenu = () => {
   }
 }
 
-// Featured Image Toggle
-//
-const showImg = () => {
-  document.querySelector('.bg-img').classList.add('show-bg-img');
-}
-
-const hideImg = () => {
-  document.querySelector('.bg-img').classList.remove('show-bg-img');
-}
-
 // ToC Toggle
 //
 const toggleToc = () => {
@@ -46,8 +36,6 @@ const toggleToc = () => {
 if (header !== null) {
   listen('#menu-btn', "click", toggleMobileMenu);
   listen('#toc-btn', "click", toggleToc);
-  listen('#img-btn', "click", showImg);
-  listen('.bg-img', "click", hideImg);
 
   document.querySelectorAll('.post-year').forEach((ele)=> {
     ele.addEventListener('click', () => {
