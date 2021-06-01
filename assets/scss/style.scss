@@ -225,7 +225,7 @@ table {
 #site-header {
   position: fixed;
   z-index: 1;
-  bottom: 0;
+  top: 0;
   width: 100%;
   box-sizing: border-box;
   box-shadow: -1px -2px 3px rgba(0, 0, 0, 0.45);
@@ -294,7 +294,7 @@ table {
 
 #mobile-menu {
   position: fixed;
-  bottom: 4.8em;
+  top: 5em;
   right: 1.5em;
   display: none;
   padding: .6em 1.8em;
@@ -749,14 +749,13 @@ hr.post-end {
   }
 }
 
+.site-main {
+  margin-top: 5em;
+}
 
 // Media Queries
 //
 @media (min-width: 800px) {
-  .site-main {
-    margin-top: 3em;
-  }
-
   hr.post-end {
     width: 40%;
   }
